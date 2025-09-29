@@ -1,0 +1,646 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.65;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: #ffffff;
+  font-style: normal;
+  margin: 0px 0px 0px 0px;
+}
+
+.cover {
+  background-color: #242424;
+  background-image: url(./img/background.jpg);
+  background-size: cover;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+}
+
+.cover .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  justify-content: center;
+  /* height: 100%;
+  width: 100%; */
+  margin: 0 70px;
+  padding: 40px 0 200px 0;
+}
+
+.header {
+  background-color: gray;
+  align-self: center;
+  width: 89vw;
+  display: flex;
+  min-height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px 0px;
+  row-gap: 20px;
+  column-gap: 0px;
+  border-radius: 50px 50px 50px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover .inner .video-container {
+  direction: ltr;
+  inset: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+  /* width: 887.625px;
+  height: 499.289px; */
+}
+
+.cover .inner .video-container video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.name,
+.position {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.name h1 {
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+  font-size: 100px;
+  letter-spacing: 15px;
+  line-height: 50px;
+  margin: 0px 0px 0px 0px;
+  text-shadow: 5px 5px 20px rgba(0, 0, 0, 0.57);
+  color: #ffffff;
+}
+
+.position h2 {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  letter-spacing: 10px;
+  line-height: 10px;
+  text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: #ffffff94;
+}
+
+.menu {
+  width: 100%;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0px 100px;
+  row-gap: 0px;
+  column-gap: 100px;
+  margin-top: -80px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 40px;
+  padding-left: 0px;
+  padding-right: 0px;
+  max-width: 1140px;
+}
+
+.menu .widget-container {
+  margin: 0px 0px 0px 0px;
+  padding: 10px 15px 10px 15px;
+}
+
+.menu .widget-container a {
+  color: #ffffffd9;
+  font-family: "Lora", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 3px;
+  outline: 0;
+  text-decoration: none;
+
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.menu .widget-container a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: white; /* màu gạch dưới */
+  transform: scaleX(0);
+  transform-origin: left; /* mặc định line chạy từ trái qua */
+  transition: transform 0.3s ease;
+}
+
+.menu .widget-container a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Trick để khi hover out thì rút từ phải sang */
+.menu .widget-container a:not(:hover)::after {
+  transform-origin: right;
+}
+
+.project,
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.main-section-title {
+  width: 100%;
+  max-width: 100%;
+  text-align: center;
+  margin: 0px 0px 0px 0px;
+  padding: 220px 0px 50px 0px;
+}
+
+.main-section-title h3 {
+  font-family: "Lora", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  letter-spacing: 3px;
+  line-height: 1.3em;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
+  color: #dadada;
+  box-sizing: border-box;
+}
+
+.main-project,
+.main-profile {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.main-profile {
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.project-img,
+.project-details {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+}
+
+.profile-img,
+.profile-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-details {
+  width: 36%;
+}
+
+.project-img {
+  margin-right: 30px;
+}
+
+.profile-img {
+  align-items: center;
+  width: 29%;
+  aspect-ratio: 1;
+}
+
+.profile-img .img-container {
+  width: 100%;
+  height: 100%;
+}
+
+.profile-img .fake-img {
+  overflow: hidden;
+}
+
+.profile-img .fake-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-img .fake-img {
+  height: 550px;
+  background-color: #dadada;
+  overflow: hidden;
+}
+
+.project-img .fake-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-img .fake-img {
+  width: 100%;
+  height: 100%;
+  background-color: #dadada;
+  border-radius: 50px;
+}
+
+.project-img .text-editor {
+  height: 100%;
+  text-align: center;
+  font-family: "Lora", Sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+
+.project-img .text-editor p {
+  margin-top: 0;
+  /* margin-bottom: 1.75em; */
+  vertical-align: baseline;
+}
+
+.project-details {
+  justify-content: space-evenly;
+  /* gap: 20px; */
+}
+
+.project-details .title,
+.project-details .content,
+.profile-details .title,
+.profile-details .content {
+  width: 100%;
+  max-width: 100%;
+}
+
+.project-details .title h4,
+.profile-details .title h4 {
+  font-family: "Lora", Sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #dadada;
+  line-height: 1.2em;
+  margin: 10px 0px 10px 0px;
+  padding: 0px 0px 0px 0px;
+}
+
+.project-details .content,
+.profile-details .content {
+  box-sizing: border-box;
+  font-family: "Lora", Sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #dadada;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 30px 0px;
+}
+
+.profile-details .content .container:nth-child(2) {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 0px 5px 0px;
+  border-style: solid;
+  border-width: 1px 0px 1px 0px;
+  border-color: #888888;
+}
+
+.profile-details .content .container p {
+  margin: 0;
+}
+
+.project-details div:nth-child(6) {
+  padding: 0px 0px 70px 0px;
+}
+
+/* .project-details .content p {
+  margin-bottom: 1.75em;
+} */
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+
+.link-youtube a {
+  background-color: #ffe137d6;
+  font-family: "Space Grotesk", Sans-serif;
+  font-weight: 900;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 15px 10px 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  outline: 0;
+}
+
+.sub-button a {
+  background-color: #e7e7e7d6;
+  font-family: "Space Grotesk", Sans-serif;
+  font-weight: 900;
+  letter-spacing: 3px;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  border-radius: 5px 5px 5px 5px;
+  padding: 10px 20px 10px 35px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  text-decoration: none;
+  outline: 0;
+}
+
+.link-youtube a .bx,
+.sub-button a .bx {
+  font-weight: 900;
+}
+
+.button-container {
+  padding-top: 80px;
+}
+
+/* HIỆU ỨNG */
+.sub-button a,
+.link-youtube a {
+  transition: transform 0.3s ease; /* mượt */
+}
+
+/* Hover effect */
+.sub-button a:hover {
+  transform: scale(0.9); /* thu nhỏ lại 0.9 */
+  background-color: #e7e7e769; /* nền nhạt */
+  color: #fff; /* chữ màu trắng */
+}
+
+.link-youtube a:hover {
+  transform: scale(0.9); /* thu nhỏ lại 0.9 */
+  background-color: #ffe13779; /* nền nhạt */
+  color: #fff; /* chữ màu trắng */
+}
+
+/* Hamburger ở góc trên phải */
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 2000;
+}
+
+/* Đổi màu icon hamburger sang trắng */
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  background-color: white;
+}
+
+/* Sidebar mặc định ẩn bên phải */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px; /* ẩn ra ngoài */
+  width: 300px;
+  height: 100%;
+  background-image: url("./img/hamburger-bg.webp");
+  max-width: 30%;
+  background-size: cover;
+  color: white;
+  transition: right 0.3s ease;
+  z-index: 1500;
+  padding-top: 60px;
+  padding-left: 30px;
+}
+
+/* Khi mở thì trượt vào */
+.sidebar.active {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 20px 0;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 900;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+  transition: color 0.2s;
+}
+
+.sidebar ul li a:hover {
+  color: #2e2e2e7d;
+}
+
+.sidebar ul li p {
+  text-decoration: none;
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  fill: #2e2e2e;
+  color: #2e2e2e;
+}
+
+.sidebar-video {
+  padding: 20px 0px;
+  width: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.sidebar-video video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.fancybox__container {
+  z-index: 10000 !important; /* cao hơn hamburger */
+}
+
+/* =========================
+   Responsive for Tablets
+   (màn hình <= 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .cover .inner {
+    margin: 0 40px;
+    padding: 30px 0 120px 0;
+  }
+
+  .name h1 {
+    font-size: 70px;
+    letter-spacing: 10px;
+  }
+
+  .position h2 {
+    font-size: 32px;
+    letter-spacing: 6px;
+  }
+
+  .menu {
+    gap: 50px;
+    margin-top: -40px;
+  }
+
+  .main-project,
+  .main-profile {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .project-img,
+  .project-details,
+  .profile-img,
+  .profile-details {
+    width: 100%;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    width: 50%;
+  }
+}
+
+/* =========================
+   Responsive for Mobile
+   (màn hình <= 768px)
+========================= */
+@media (max-width: 768px) {
+  .cover .inner {
+    margin: 0 20px;
+    padding: 20px 0 100px 0;
+  }
+
+  .name h1 {
+    font-size: 40px;
+    letter-spacing: 6px;
+    line-height: 1.2;
+  }
+
+  .position h2 {
+    font-size: 20px;
+    letter-spacing: 3px;
+    line-height: 1.2;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .main-section-title {
+    padding: 100px 0 30px 0;
+  }
+
+  .main-section-title h3 {
+    font-size: 24px;
+  }
+
+  .main-project,
+  .main-profile {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project-img .fake-img {
+    height: 250px;
+  }
+
+  .profile-img {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .profile-details {
+    width: 100%;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 1;
+  }
+
+  .sidebar {
+    right: -100%; /* ẩn hoàn toàn */
+    width: 100%; /* full màn hình */
+    max-width: 100%;
+  }
+
+  .sidebar.active {
+    right: 0; /* hiện ra */
+  }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1024px) {
+  .sidebar {
+    text-align: center; /* canh giữa toàn bộ chữ */
+    padding-left: 0;
+  }
+
+  .sidebar ul li a {
+    display: block; /* để dễ canh giữa */
+    font-size: 24px; /* tăng size chữ */
+    margin: 10px 0; /* thêm khoảng cách giữa các mục */
+  }
+
+  .sidebar ul li p {
+    font-size: 20px;
+  }
+
+  .sidebar-video {
+    width: 100%;
+    padding: 20px 10px;
+  }
+}

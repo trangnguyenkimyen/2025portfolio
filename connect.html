@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrangNguyenKimYen | Connect</title>
+    <!-- HAMBURGER -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <!-- FANCY APPS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="connect.css" />
+  </head>
+  <body>
+    <!-- Nút hamburger -->
+    <button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- Sidebar menu -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./works.html">Works</a></li>
+        <li>
+          <a href="./connect.html">Connect</a>
+          <br />
+          <p>
+            trangnguyenkimyen@gmail.com
+            <br />
+            (+84) 85 293 3920
+          </p>
+        </li>
+      </ul>
+
+      <div class="sidebar-video">
+        <video src="vid/bg-vid.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </nav>
+
+    <div class="cover">
+      <div class="inner">
+        <h1>CONNECT</h1>
+
+        <div class="contact-info">
+          <div class="container">
+            <p>
+              Mail: trangnguyenkimyen@gmail.com
+              <br />
+              Phone: (+84) 85 293 3920
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.querySelector(".sidebar");
+
+      hamburger.addEventListener("click", function () {
+        this.classList.toggle("is-active"); // animation nút
+        sidebar.classList.toggle("active"); // hiện/ẩn menu
+      });
+    </script>
+  </body>
+</html>

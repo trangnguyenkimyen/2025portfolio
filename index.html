@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrangNguyenKimYen</title>
+    <!-- HAMBURGER -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css"
+    />
+    <!-- FANCY APPS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Nút hamburger -->
+    <button class="hamburger hamburger--spin" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+
+    <!-- Sidebar menu -->
+    <nav class="sidebar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./works.html">Works</a></li>
+        <li>
+          <a href="./connect.html">Connect</a>
+          <br />
+          <p>
+            trangnguyenkimyen@gmail.com
+            <br />
+            (+84) 85 293 3920
+          </p>
+        </li>
+      </ul>
+
+      <div class="sidebar-video">
+        <video src="vid/bg-vid.mp4" autoplay muted loop playsinline></video>
+      </div>
+    </nav>
+
+    <div class="cover">
+      <div class="inner">
+        <section class="header">
+          <div class="video-container">
+            <video src="vid/bg-vid.mp4" autoplay muted loop playsinline></video>
+          </div>
+          <div class="name">
+            <h1>KIM YEN</h1>
+          </div>
+          <div class="position">
+            <h2>AI Content Creator</h2>
+          </div>
+        </section>
+
+        <section class="menu">
+          <div class="widget-container">
+            <a href="./about.html">ABOUT</a>
+          </div>
+          <div class="widget-container">
+            <a href="./works.html">WORKS</a>
+          </div>
+          <div class="widget-container">
+            <a href="./connect.html">CONNECT</a>
+          </div>
+        </section>
+
+        <section class="project">
+          <div class="main-section-title">
+            <h3>Project</h3>
+          </div>
+          <div class="main-project">
+            <div class="project-img">
+              <div class="img-container">
+                <a href="img/meo2.jpg" data-fancybox="gallery">
+                  <div
+                    class="fake-img"
+                    data-bs-toggle="modal"
+                    data-bs-target="#imageModal"
+                  >
+                    <img src="img/meo2.jpg" alt="Mèo con chăm bệnh mèo mẹ" />
+                  </div>
+                </a>
+              </div>
+              <div class="text-editor">
+                <p>07/2025 | Thời lượng: 9 phút | Lượt xem: 420k</p>
+              </div>
+            </div>
+            <div class="project-details">
+              <div class="title">
+                <h4>[Tóm tắt]</h4>
+              </div>
+              <div class="content">
+                <p>
+                  “Mèo con chăm bệnh mèo mẹ” là video thiếu nhi kể về tình cảm
+                  giữa mèo con và mèo mẹ vàng. Hình ảnh được thể hiện theo phong
+                  cách realistic với chút nhân hóa, video mang đến thông điệp
+                  giản dị về tình yêu thương gia đình.
+                </p>
+              </div>
+
+              <div class="title">
+                <h4>[Vai trò]</h4>
+              </div>
+              <div class="content">
+                <p>Tạo ảnh và video minh họa.</p>
+              </div>
+
+              <div class="title">
+                <h4>[Công cụ]</h4>
+              </div>
+              <div class="content">
+                <p>ChatGPT, Leonardo.Ai, Whisk, Hailuo.</p>
+              </div>
+
+              <div class="buttons">
+                <div class="link-youtube">
+                  <a
+                    target="_blank"
+                    href="https://youtu.be/BxY40JMqWVA?si=Railnin2KnkWw-x8"
+                  >
+                    <span>Link Youtube</span>
+                    <i class="bx bx-play-circle"></i>
+                  </a>
+                </div>
+                <div class="sub-button">
+                  <a href="./works.html">
+                    <span>WORKS</span>
+                    <i class="bx bx-chevron-right"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="profile">
+          <div class="main-section-title">
+            <h3>Profile</h3>
+          </div>
+          <div class="main-profile">
+            <div class="profile-img">
+              <div class="img-container">
+                <div class="fake-img">
+                  <img src="img/avatar.png" alt="Avatar" />
+                </div>
+              </div>
+            </div>
+            <div class="profile-details">
+              <div class="title">
+                <h4>Trang Nguyễn Kim Yến</h4>
+              </div>
+              <div class="content" style="padding-bottom: 0px">
+                <div class="container" style="padding-bottom: 5px">
+                  <p>Sống tại Tp. Hồ Chí Minh, 23 tuổi.</p>
+                  <p>AI Content Creator.</p>
+                </div>
+                <div class="container">
+                  <p>
+                    Tốt nghiệp chuyên ngành Hệ thống thông tin quản lý tại
+                    trường Đại học Ngân hàng Tp. Hồ Chí Minh.
+                  </p>
+                  <p>GPA: 3.31/4</p>
+                </div>
+                <div class="container" style="padding-top: 5px">
+                  <p>
+                    Thực hiện nhiều video ngắn dành cho khán giả nhỏ tuổi, sử
+                    dụng các công cụ AI sáng tạo như Hailuo, Kling, Whisk để
+                    mang đến hình ảnh sinh động và gần gũi. Các dự án nổi bật
+                    gồm hoạt hình 3D (Sonic, Spiderman, …) và video động vật
+                    (chó, mèo, thỏ).
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <div class="sub-button">
+              <a href="./about.html">
+                <span>ABOUT</span>
+                <i class="bx bx-chevron-right"></i>
+              </a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const sidebar = document.querySelector(".sidebar");
+
+      hamburger.addEventListener("click", function () {
+        this.classList.toggle("is-active"); // animation nút
+        sidebar.classList.toggle("active"); // hiện/ẩn menu
+      });
+    </script>
+
+    <script>
+      // Kích hoạt plugin
+      gsap.registerPlugin(ScrollTrigger);
+
+      // Tạo timeline cho hiệu ứng khi load
+      const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
+
+      // 1. Video fade in trước
+      tl.from(".header .video-container", {
+        opacity: 0,
+        duration: 1,
+      })
+
+        // 2. Sau đó đến tên
+        .from(
+          ".header .name h1",
+          {
+            y: -50,
+            opacity: 0,
+            duration: 0.5,
+          },
+          "-=0.5"
+        ) // chạy chồng 1 phần với video
+
+        // 3. Rồi đến vị trí
+        .from(
+          ".header .position h2",
+          {
+            y: 50,
+            opacity: 0,
+            duration: 0.5,
+          },
+          "-=0.4"
+        )
+
+        // 4. Cuối cùng là menu
+        .from(".menu .widget-container", {
+          y: 50,
+          opacity: 0,
+          duration: 0.5,
+          stagger: 0.2,
+        });
+
+      // Hiệu ứng Project section
+      gsap.from(".project .main-project", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".project",
+          start: "top 80%",
+        },
+      });
+
+      // Hiệu ứng Profile section
+      gsap.from(".profile .main-profile", {
+        x: -100,
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: ".profile",
+          start: "top 50%",
+        },
+      });
+    </script>
+  </body>
+</html>
